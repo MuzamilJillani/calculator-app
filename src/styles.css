@@ -1,0 +1,98 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+li {
+  list-style: none;
+}
+#container {
+  width: 400px;
+  height: 600px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+#display {
+  width: 100%;
+  height: 28%;
+  color: white;
+  font-size: 30px;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  -webkit-box-shadow: inset 0 0 10px rgb(255, 255, 255);
+}
+#btn-section {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2px 2px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0fff0;
+  color: navy;
+  font-size: 20px;
+}
+#clear {
+  grid-column: 1/3;
+  background-color: rosybrown;
+}
+#zero {
+  grid-column: 1/3;
+}
+#equals {
+  grid-row: 4/6;
+  grid-column: 4/5;
+  background-color: thistle;
+}
+.btn:hover {
+  border: 1px slateblue solid;
+  background-color: papayawhip;
+}
+#clear:hover {
+  background-color: palevioletred;
+  color: white;
+}
+#equals:hover {
+  background-color: slateblue;
+  color: white;
+}
+#display > div:nth-child(1) {
+  width: 100%;
+  height: 70%;
+  padding-right: 10px;
+  text-align: right;
+  overflow: auto;
+  word-break: break-word;
+}
+#display > div:nth-child(1)::-webkit-scrollbar {
+  width: 10px;
+}
+#display > div:nth-child(1)::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+#display > div:nth-child(1)::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+#display > div:nth-child(2) {
+  width: 100%;
+  height: 30%;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
